@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-info i {
+  color: #84a98c;
+  margin-right: 8px;
+  width: 18px;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #2f3e46;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  height: calc(100vh - 40px); 
+  overflow-y: auto; 
+  color: #ffffff
+}
+
+.sidebar .profile-img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #cad2c5;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.sidebar .role {
+  background-color: #52796f;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.sidebar hr {
+  border: 1px solid #84a98c;
+  margin: 20px 0;
+}
+
+.contact-info p {
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.main-content {
+  width: 72%; 
+  margin-left: 28%; 
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #1e6091;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  background-color: #1e6091;
+  color: #e9ecee;
+}
+
+.main-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  position: relative;
+  color: #1e6091;
+}
+
+.main-content h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #1e6091;
+  margin-top: 5px;
+}
+
+.main-content h3 {
+  font-size: 22px;
+  margin: 30px 0 15px;
+  color: #333;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skill-box {
+  background-color: #edf2f4;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #cfd8dc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.skill-box h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1e6091;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #f1f3f5;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h4 {
+  padding: 15px;
+  font-size: 18px;
+  color: #1e6091;
+}
+
+.project-card p {
+  padding: 0 15px 15px;
+  font-size: 14px;
+  color: #4f4f4f
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #1e6091;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #f0f4f8;
+  border: 1px solid #b0bec5;
+  padding: 12px 15px;
+  border-radius: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background-color: #1e6091;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #144e78;
+}
